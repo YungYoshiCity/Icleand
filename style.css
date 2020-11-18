@@ -20,6 +20,7 @@ nav{
     display: grid;
     grid-template-columns:repeat(12, minmax(50px, 100px));
     column-gap: 20px;
+    z-index: 1;
     
     max-width: 1440px;
     height: 100px;
@@ -33,6 +34,7 @@ nav{
 }
 
 .perfect-trip-header{
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +76,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     
     max-width: 1920px;
     font-size: 300px;
@@ -88,9 +91,10 @@ nav{
     content: 'Iceland';
     position: absolute;
     
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
 
+    z-index: -1;
     width: 100%;
     line-height: 1em;
     font-size: 550px;
@@ -99,6 +103,7 @@ nav{
 }
 
 .arrows{
+    z-index: 1;
     margin: 0 auto;
     width: 30px;
     height: 36px;
